@@ -1,0 +1,17 @@
+﻿@model StudentRegistrationApp.Models.Registration
+
+<h1>Delete Registration</h1>
+
+<div class="alert alert-danger">
+    Are you sure you want to delete this registration?
+</div>
+
+<p><strong>Student:</strong> @Model.Student.FullName</p>
+<p><strong>Course:</strong> @Model.Course.CourseName</p>
+
+<form asp-action="Delete" method="post">
+    <input type="hidden" asp-for="RegistrationId" />
+
+    <button type="submit" class="btn btn-danger">Yes, Delete</button>
+    <a asp-action="Index" class="btn btn-secondary">Cancel</a>
+</form>

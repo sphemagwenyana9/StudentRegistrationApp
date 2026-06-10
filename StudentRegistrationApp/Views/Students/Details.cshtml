@@ -1,0 +1,17 @@
+﻿@model StudentRegistrationApp.Models.Student
+
+<h1>Student Details</h1>
+
+<div class="card">
+    <div class="card-body">
+        <p><strong>ID:</strong> @Model.StudentId</p>
+        <p><strong>Name:</strong> @Model.FullName</p>
+        <p><strong>Email:</strong> @Model.Email</p>
+        <p><strong>Phone:</strong> @Model.PhoneNumber</p>
+    </div>
+</div>
+
+<br />
+
+<a asp-action="Edit" asp-route-id="@Model.StudentId" class="btn btn-warning">Edit</a>
+<a asp-action="Index" class="btn btn-secondary">Back</a>

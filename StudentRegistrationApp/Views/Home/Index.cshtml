@@ -1,0 +1,45 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="hero-section">
+
+    <img src="~/images/school.jpg"
+         class="hero-image"
+         alt="School" />
+
+    <div class="hero-content">
+
+        <h1>Student Registration System</h1>
+
+        <p>
+            Welcome to our student management portal.
+            Register students, manage courses, and track registrations
+            all from one place.
+        </p>
+
+        <div class="mt-4">
+
+            <a asp-controller="Students"
+                   asp-action="Index"
+                   class="btn btn-primary btn-lg">
+                Manage Students
+            </a>
+
+            <a asp-controller="Courses"
+                   asp-action="Index"
+                   class="btn btn-success btn-lg">
+                View Courses
+            </a>
+
+            <a asp-controller="Registrations"
+                   asp-action="Index"
+                   class="btn btn-warning btn-lg">
+                Registrations
+            </a>
+
+        </div>
+
+    </div>
+
+</div>
